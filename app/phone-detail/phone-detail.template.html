@@ -1,1 +1,26 @@
-TBD: Detail view for <span>{{$ctrl.phoneId}}</span>
+<img ng-src="{{$ctrl.phone.images[0]}}" class="phone" />
+
+<h1>{{$ctrl.phone.name}}</h1>
+
+<p>{{$ctrl.phone.description}}</p>
+
+<ul class="phone-thumbs">
+    <li ng-repeat="img in $ctrl.phone.images">
+        <img ng-src="{{img}}" />
+    </li>
+</ul>
+
+<ul class="specs">
+    <li>
+        <span>Disponibilidad y redes</span>
+        <dl>
+            <dt>Disponibilidad</dt>
+            <dd ng-repeat="availability in $ctrl.phone.availability">{{availability}}</dd>
+        </dl>
+    </li>
+
+    <li>
+        <span>Características adicionales</span>
+        <dd>{{$ctrl.phone.additionalFeatures}}</dd>
+    </li>
+</ul>

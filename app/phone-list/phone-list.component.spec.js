@@ -1,6 +1,6 @@
 describe('phoneList', function () {
 
-  // Cargar el módulo que contiene el componente `phoneList` antes de cada prueba
+  // Carga el módulo que contiene el componente `phoneList` antes de cada prueba
   beforeEach(module('phoneList'));
 
   // Prueba el controller
