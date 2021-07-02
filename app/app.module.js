@@ -2,6 +2,8 @@
 angular.module('phonecatApp', [
   // ...que depende del módulo `ngRoute`.
   'ngRoute',
+  // ...que depende del módulo `core`.
+  'core',
   // ...que depende del módulo `phoneList`.
   'phoneList',
   // ...que depende del módulo `phoneDetail`.
